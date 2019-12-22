@@ -1,0 +1,62 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>各式各样的按钮</title>
+
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.wrap{
+			width: 600px;
+			height: 400px;
+			margin: 0 auto;
+			/*background: pink;*/
+			padding: 30px 50px;
+		}
+
+		.button12{
+			outline-style: none;
+			padding: 20px;
+			color: white;
+			background: blue;
+			border: none;
+			border-radius: 12px;
+			z-index: -1;
+			cursor: pointer;
+			box-shadow: 0px 9px 0px rgba(144,144,144,1),0px 9px 25px rgba(0,0,0,.7);
+		}
+		.button12:hover{
+			background: gold;
+		}
+		.button12:active{
+			background: gold;
+			box-shadow: 0 5px #666;
+			transform: translateY(4px);
+			transition-duration: 0s;/*过渡效果持续时间*/
+		}
+	</style>
+</head>
+<body>
+<canvas id="bg" width="1000px" height="1000px" style="background-color:pink"></canvas>
+<script type="text/javascript">
+    var c=document.getElementById("bg");
+    var cxt=c.getContext("2d");
+    var img=new Image()
+    img.src="/images/tubiao-1.jpg";
+</script>
+
+
+     <div class="wrap" style="position: absolute; left: 500px;top:400px;">
+	      <button class="button12" onclick="window.open('游戏1.html')">开始游戏</button>
+     </div>
+<img src="/images/tubiao-1.jpg" id="图片ID1" style="display:none;" />
+<embed src="music/111.mp3" ></embed>
+
+</body>
+</html>
